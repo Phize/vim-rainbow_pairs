@@ -66,7 +66,7 @@ let g:rainbow_pairs_enable_on_startup = 0
 let g:rainbow_pairs_enable_key_mappings = 0
 ```
 
-### Disable autocmds
+### Disable default autocmds
 
 ```vim
 let g:rainbow_pairs_enable_autocmds = 0
