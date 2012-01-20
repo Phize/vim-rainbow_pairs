@@ -79,7 +79,7 @@ A list of start/end tokens (RegExp) list.
 ```vim
 let g:rainbow_pairs_token_pairs = [
                 \ ['/(/',  '/)/'],
-                \ ['/\\[/', '/\\]/'],
+                \ ['/\[/', '/\]/'],
                 \ ['/{/',  '/}/'],
                 \ ['/</',  '/>/']
             \ ]
