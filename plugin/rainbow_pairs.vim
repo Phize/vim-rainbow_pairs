@@ -3,6 +3,12 @@
 "               by Martin Krischik and others.
 "==============================================================================
 
+"==============================================================================
+" Rainbow Pairs for Vim by Phize, based on above Rainbow Parentheses.
+"
+" https://github.com/Phize/vim-rainbow_pairs
+"==============================================================================
+
 if exists('g:loaded_rainbow_pairs')
     finish
 endif
