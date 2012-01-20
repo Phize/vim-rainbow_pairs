@@ -34,10 +34,10 @@ command! -nargs=0 RainbowPairsDisable  call rainbow_pairs#disable()
 command! -nargs=0 RainbowPairsUpdate   call rainbow_pairs#update()
 
 " Default key mappings.
-nnoremap <silent> <Plug>(rainbow_pairs_toggle)  :<C-u>call rainbow_pairs_toggle()<CR>
-nnoremap <silent> <Plug>(rainbow_pairs_enable)  :<C-u>call rainbow_pairs_enable()<CR>
-nnoremap <silent> <Plug>(rainbow_pairs_disable) :<C-u>call rainbow_pairs_disable()<CR>
-nnoremap <silent> <Plug>(rainbow_pairs_update)  :<C-u>call rainbow_pairs_update()<CR>
+nnoremap <silent> <Plug>(rainbow_pairs_toggle)  :<C-u>call rainbow_pairs#toggle()<CR>
+nnoremap <silent> <Plug>(rainbow_pairs_enable)  :<C-u>call rainbow_pairs#enable()<CR>
+nnoremap <silent> <Plug>(rainbow_pairs_disable) :<C-u>call rainbow_pairs#disable()<CR>
+nnoremap <silent> <Plug>(rainbow_pairs_update)  :<C-u>call rainbow_pairs#update()<CR>
 
 if !exists('g:rainbow_pairs_enable_key_mappings') || g:rainbow_pairs_enable_key_mappings
     silent! nmap <silent> <unique> <Leader>r <Plug>(rainbow_pairs_toggle)
