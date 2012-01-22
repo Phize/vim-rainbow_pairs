@@ -14,7 +14,7 @@ if exists('g:loaded_rainbow_pairs')
 endif
 
 let s:save_cpo = &cpo
-set cpo&vim
+set cpo-=C
 
 " Auto commands.
 if !exists('g:rainbow_pairs_enable_autocmds') || g:rainbow_pairs_enable_autocmds

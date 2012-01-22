@@ -12,7 +12,7 @@
 "==============================================================================
 
 let s:save_cpo = &cpo
-set cpo&vim
+set cpo-=C
 
 " Default token pairs. {{{
 if !exists('g:rainbow_pairs_token_pairs')
