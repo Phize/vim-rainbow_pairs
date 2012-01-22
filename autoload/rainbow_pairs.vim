@@ -143,7 +143,7 @@ function! rainbow_pairs#update()
 endfunction " }}}
 
 " Disable highlighting. {{{
-function! rainbow_pairs#disable() " {{{
+function! rainbow_pairs#disable()
     for each in range(1, s:max)
         execute 'highlight clear level' . each . 'c'
     endfor
