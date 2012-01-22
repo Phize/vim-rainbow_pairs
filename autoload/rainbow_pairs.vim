@@ -11,8 +11,8 @@
 " https://github.com/Phize/vim-rainbow_pairs
 "==============================================================================
 
-let s:save_cpo = &cpo
-set cpo-=C
+let s:_cpoptions = &cpoptions
+set cpoptions-=C
 
 " Default token pairs. {{{
 if !exists('g:rainbow_pairs_token_pairs')
@@ -151,6 +151,6 @@ function! rainbow_pairs#disable() " {{{
     let s:enabled = 0
 endfunction " }}}
 
-let &cpo = s:save_cpo
+let &cpoptions = s:_cpoptions
 
 " vim:ts=4:sw=4:sts=4:fdm=marker:fmr={{{,}}}

@@ -13,8 +13,8 @@ if exists('g:loaded_rainbow_pairs')
     finish
 endif
 
-let s:save_cpo = &cpo
-set cpo-=C
+let s:_cpoptions = &cpoptions
+set cpoptions-=C
 
 " Auto commands.
 if !exists('g:rainbow_pairs_enable_autocmds') || g:rainbow_pairs_enable_autocmds
@@ -43,7 +43,7 @@ if !exists('g:rainbow_pairs_enable_key_mappings') || g:rainbow_pairs_enable_key_
     silent! nmap <silent> <unique> <Leader>r <Plug>(rainbow_pairs_toggle)
 endif
 
-let &cpo = s:save_cpo
+let &cpoptions = s:_cpoptions
 
 let g:loaded_rainbow_pairs = 1
 
